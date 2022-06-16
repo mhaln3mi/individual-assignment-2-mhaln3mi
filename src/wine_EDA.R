@@ -11,6 +11,8 @@
 install.packages("janitor")
 install.packages("corrplot")
 install.packages("here")
+install.packages("GGally")
+install.packages("reactable")
 
 library(tidyverse)
 library(janitor)
@@ -24,7 +26,7 @@ library(reactable)
 # Second we need to import our dataset from our data folder
 # We will use read.csv to import the data then store it in wine object
 
-wine <- read.csv("~/Documents/individual-assignment-2-mhaln3mi/data/winequality-red.csv")
+wine <- read.csv(here("data/winequality-red.csv")
 
 
 # Now we will clean our data names using janitor clean_names() 

@@ -63,7 +63,7 @@ As mentioned above, the dataset is about red wine samples (vinho verde) from Por
 *First lets load our data*
 
 ```{r, message=FALSE, warning=FALSE}
-wine <- read.csv("~/Documents/individual-assignment-2-mhaln3mi/data/winequality-red.csv")
+wine <- read.csv(here("data/winequality-red.csv"))
 
 ```
 
