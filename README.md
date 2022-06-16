@@ -12,7 +12,7 @@ We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-
 
 ## Web page
 - [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi//wine_report.html)
-- [Github repo](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/)
+- [Github repo](https://github.com/Misk-DSI/individual-assignment-2-mhaln3mi/)
 
 
 
