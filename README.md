@@ -3,15 +3,21 @@
 ---
 
 ## Description
----
+
 
 In this report preformed exploratory data analysis (EDA) on red wine dataset.
 We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009).
 
-View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi//wine_report.html) the web page
----
 
-##Data
+
+## Web page
+- [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi//wine_report.html)
+- [Github repo](https://github.com/Misk-DSI/individual-assignment-2-mhaln3mi/)
+
+
+
+
+## Data
 ---
 | Variable      | Description |
 | ----------- | ----------- |
@@ -28,15 +34,16 @@ View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi//
 | alcohol   | The alcohol percentage in wine.        |
 | quality   | Quality ranking of wine, between 0 and 10.        |
 
-##Goals
----
+
+
+## Goals
 
 - Find correlation between wine quality and the variables in the dataset.
 - Learn how to preform EDA and what questions to ask.
 
----
 
-##Libraries used
+
+## Libraries used
 
 - tidyverse
 - janitor
