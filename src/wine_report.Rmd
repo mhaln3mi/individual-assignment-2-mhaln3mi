@@ -28,10 +28,17 @@ library(reactable)
 
 ## Introdution 
 
+<br>
+<img src="../../vineyard.jpg">
+<br>
+<br>
+
 In this report we will be taking a look at a Red Wine dataset. The wine is called
 "vinho verde" wine from Portugal. We will be trying to find relationship between quality
 and other variables in the dataset. We will also be performing exploratory data
-analysis (EDA) on the dataset.
+analysis (EDA) on the dataset.<br>
+
+<br>
 
 
 
@@ -41,7 +48,7 @@ analysis (EDA) on the dataset.
 
 ## Data
 
-As mentioned above, the dataset is about red wine samples (vinho verde) from Portugal. The data was collected from May 2004 to February 2007. Only chemical properties of the wine are included here. There is no data about grape types, wine brand or age, which to my limited knowledge(from movies and games) are important factors for wine quality. There is 12 variables in this dataset, here they are:
+As mentioned above, the dataset is about red wine samples (vinho verde) from Portugal. The data was collected from May 2004 to February 2007. Only chemical properties of the wine are included here. There is no data about grape types, wine brand or age, which to my limited knowledge(from movies and games) are important factors for wine quality. There is 12 variables in this dataset, here they are:<br>
 
 
 | Variable      | Description |
@@ -59,6 +66,8 @@ As mentioned above, the dataset is about red wine samples (vinho verde) from Por
 | alcohol   | The alcohol percentage in wine.        |
 | quality   | Quality ranking of wine, between 0 and 10.      |   
 
+<br>
+<br>
 
 *First lets load our data*
 
@@ -67,6 +76,8 @@ wine <- read.csv(here("data/winequality-red.csv"))
 
 ```
 
+<br>
+<br>
 
 
 *Second lets clean the data using `clean.names()` from janitor package and store it in new object*
@@ -77,6 +88,8 @@ wine %>%
   clean_names() -> wine_df
 ```
 
+<br>
+<br>
 
 
 *Lets also check for missing values*
@@ -85,8 +98,12 @@ wine %>%
 sum(is.na(wine_df))
 ```
 
+<br>
+<br>
 Our dataset doesn't contain any missing values so we don't need to do further cleaning.
 
+<br>
+<br>
 
 
 *Interactive table*
@@ -96,7 +113,8 @@ reactable(wine_df)
 ```
 
 
-
+<br>
+<br>
 
 
 
@@ -106,6 +124,8 @@ reactable(wine_df)
 # EDA
 
 Here we will be exploring and visualizing our data
+<br>
+<br>
 
 
 *First, we will exploring our data using `glimpse()` to see the dimensions of the dataset and the type of variables*
@@ -115,8 +135,13 @@ glimpse(wine_df)
 
 ```
 
+<br>
+<br>
+
 we see here that the dimensions of our data is 1599 of rows and 12 cols, and all variables are double type except for `quality` which is an integer.
 
+<br>
+<br>
 
 *Lets also use `summary()` fo further explore the dataset*
 
@@ -124,11 +149,17 @@ we see here that the dimensions of our data is 1599 of rows and 12 cols, and all
 summary(wine_df)
 ```
 
+<br>
+<br>
+
 We see that the `quality` of the wine in this dataset is between 3 to 8, with no wine quality
 of 1, 2, 9, 10
 
+<br>
+<br>
 
 ---
+
 
 
 ***Plotting***
@@ -144,6 +175,8 @@ ggplot(wine_df, aes(x=quality, color = wine_df$quality)) +
   labs(title= "Red Wine Quality Distribution")
 ```
 
+<br>
+<br>
 
 We can see from this graph that most of our data is in mid range quality between 5-6 with few very high or low quality wine. 
 
@@ -156,7 +189,8 @@ We can see from this graph that most of our data is in mid range quality between
 ggcorr(wine_df, label=TRUE, size = 3)
 ```
 
-
+<br>
+<br>
 
 We can see from the heatmap above that there is negative and positive correlation.
 We will focus on quality correlation in the report, we see that quality has positive 
@@ -176,6 +210,8 @@ alcohol has lower density than wine. We also see positive correlation between `d
 we will be exploring the correlation between quality and the high correlation variables listed above.
 
 
+<br>
+<br>
 
 
 *Next, we will look at the distribution of the numeric variables via histograms:*
@@ -191,12 +227,15 @@ wine_df %>%
   theme(legend.position="none") 
 ```
 
+<br>
+<br>
 
 We can see that `density` and `pH` seem to be symmetric, so the distribution looks like a normal distribution. `volatile_acidity` also shows a somewhat normal distribution.
 Looking at the remaining variables, we can see that a number of distributions are
 positively skewed, like `chlorides`, `fixed_acidity`, `residual_sugar`, `sulphates` among others. Which means these distributions have mostly lower end values with a few wines with relatively higher values.
 
-
+<br>
+<br>
 
 *Lets see the effect of `sulphates`, `alcohol` and `volatile_acidity` values on the wine `quality`.*
 
@@ -215,11 +254,16 @@ ggplot(wine_df, aes(x=as.factor(quality), y=volatile_acidity, fill=as.factor(qua
 
 ```
 
+<br>
+<br>
+
 Looking at the above plots, it becomes clear that `quality` has a positive correlation with
 both `alcohol` and `sulphates` and negative correlation with `volatile_acidity`. We can 
 also see that data of `quality` 5 and 6 have a lot of outliers but that's probably because 
 the make up most of our sample. 
 
+<br>
+<br>
 
 ---
 
@@ -228,5 +272,8 @@ the make up most of our sample.
 
 After exploring our data, we might have ended up with more questions than answers :sad:.
 Because although we were able to find that `alcohol` and `sulphates` effect `quality` positively, while `volatile_acidity` effected it negatively. We can't be fully sure because of the small size of our high and low `quality` wine sample. We will need a bigger dataset with more variation in its sample to accurately determine what variables effect quality the most. But for now I think this is good enough.
+
+<br>
+<br>
 
 
