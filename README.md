@@ -8,9 +8,9 @@
 In this report preformed exploratory data analysis (EDA) on red wine dataset.
 We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009).
 
-View [wine report](./wine_report.html) the web page
+View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi//wine_report.html) the web page
 
-Github [repo](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/)
+
 
 
 ## Data
