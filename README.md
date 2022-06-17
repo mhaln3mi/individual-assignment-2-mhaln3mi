@@ -1,6 +1,7 @@
 # Red Wine Quality Report
 
 ---
+<br>
 
 ## Description
 
@@ -10,7 +11,6 @@ We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-
 
 View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/) the web page
 
-<br>
 <br>
 
 
@@ -30,7 +30,9 @@ View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/)
 | pH   | Measurement of how acidic or basic a wine is, usually between 3-4.      |
 | sulphates   | A wine additive to prevents oxidation.        |
 | alcohol   | The alcohol percentage in wine.        |
-| quality   | Quality ranking of wine, between 0 and 10.        
+| quality   | Quality ranking of wine, between 0 and 10. 
+
+<br>
 
 ## Goals
 
@@ -38,6 +40,7 @@ View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/)
 - Find correlation between wine quality and the variables in the dataset.
 - Learn how to preform EDA and what questions to ask.
 
+<br>
 
 
 ## Libraries used
