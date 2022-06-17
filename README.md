@@ -18,7 +18,7 @@ We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-
 
 
 ## Data
----
+
 | Variable      | Description |
 | ----------- | ----------- |
 | fixed_acidity      | Tartaric acid, it's important for the wine and its color and taste of the finished wine.       |
