@@ -10,6 +10,8 @@ We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-
 
 View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/) the web page
 
+<br>
+<br>
 
 
 
