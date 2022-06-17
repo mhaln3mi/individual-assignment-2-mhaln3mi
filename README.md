@@ -3,7 +3,7 @@
 ---
 
 ## Description
----
+
 
 In this report preformed exploratory data analysis (EDA) on red wine dataset.
 We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009).
@@ -31,7 +31,7 @@ View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/)
 | quality   | Quality ranking of wine, between 0 and 10.        
 
 ## Goals
----
+
 
 - Find correlation between wine quality and the variables in the dataset.
 - Learn how to preform EDA and what questions to ask.
