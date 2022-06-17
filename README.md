@@ -28,7 +28,7 @@ View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/)
 | pH   | Measurement of how acidic or basic a wine is, usually between 3-4.      |
 | sulphates   | A wine additive to prevents oxidation.        |
 | alcohol   | The alcohol percentage in wine.        |
-| quality   | Quality ranking of wine, between 0 and 10.        |
+| quality   | Quality ranking of wine, between 0 and 10.        
 
 ## Goals
 ---
