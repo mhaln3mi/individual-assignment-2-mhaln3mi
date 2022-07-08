@@ -6,7 +6,7 @@
 ## Description
 
 
-In this report preformed exploratory data analysis (EDA) on red wine dataset.
+In this report, we preformed exploratory data analysis (EDA) on red wine dataset to see what variables effect the quality the most.
 We obtained the data from [here](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009).
 
 View [wine report](https://misk-dsi.github.io/individual-assignment-2-mhaln3mi/) the web page
